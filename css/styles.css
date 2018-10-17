@@ -1,0 +1,210 @@
+/*****************************
+  BASE SETUP
+*****************************/
+
+html {
+  box-sizing: border-box; /* use IE box model */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; /* inherit allows for easy creation of a new box model context further down the tree */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; /* smoother rendering of fonts */
+    font-size: 16px;
+    /*
+    height: 100vh;
+    background-image: url(images/bg-img.png);
+    background-position: right bottom;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    overflow-y: hidden;*/
+}
+
+/*****************************
+  Navigation
+*****************************/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: rgb(17, 17, 17);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul a {
+    padding: 0 20px;
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+nav ul a:hover {
+    color: rgb(255, 116, 110)
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 3em;
+    padding: .5em 2em;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: rgb(255, 116, 110);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 116, 110);
+}
+
+/*****************************
+  Hero
+*****************************/
+
+h1 {
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(17, 17, 17);
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(136, 136, 136);
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.cta {
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+}
+
+.cta:hover {
+    color: rgb(255, 116, 110);
+}
+
+.hero-txt {
+    position: absolute;
+    width: 515px;
+    top: 25%;
+    left: 10%;
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+}
+
+.explore hr {
+    width: 25px;
+    height: 4px;
+    background-color: rgb(17, 17, 17);
+    margin: 0 0 0 1rem;
+    border: 0;
+}
+
+/*****************************
+  Scroll
+*****************************/
+
+.scroll {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.scroll p {
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+}
+
+.scroll hr {
+    height: 25px;
+    width: 4px;
+    background-color: rgb(17, 17, 17);
+    margin-bottom: 1rem;
+    border: 0;
+}
+
+/*****************************
+  Background
+*****************************/
+
+.container {
+    position: relative; 
+    overflow: hidden;
+    height: 100vh;
+    z-index: -1;
+}
+
+#a-circle,
+#b-circle,
+#c-circle {
+    border-radius: 50%;
+    
+}
+
+#a-circle {
+    width: 100vh;
+    height: 100vh;
+    background: rgba(255, 116, 110, 0.3);
+    position: absolute;
+    right: -15%;
+    bottom: -5%;
+}
+
+#b-circle {
+    background: rgba(255, 116, 110, 0.5);
+    width: 94vh;
+    height: 94vh;
+    position: absolute;
+    margin: 3vh;
+}
+
+#c-circle {
+    background: rgb(255, 116, 110);
+    width: 88vh;
+    height: 88vh;
+    margin: 3vh;
+    position: absolute;
+}
+
+#img-circle {
+    width: 82vh;
+    height: 82vh;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 3vh;
+}
+
+#img-circle img {
+    width: auto;
+    height: 100%;
+    margin-left: -190px;
+    margin-top: -1px;
+}
