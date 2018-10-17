@@ -17,6 +17,8 @@ Feedback is always welcome, so if you have any regarding this challenge please e
 
 Have fun building!
 
+Check out a live demo of what I built [here](https://dromo77.github.io/DSIGN-landing-page/).
+
 ## Styleguide
 
 ### Colours
